@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# 环境变量（保护敏感信息）
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Backend
+
+# Node.js
+node_modules/
+pnpm-lock.yaml
+
+
+# IDE
+.vscode/
+.idea/
+
+
+# Cursor
+.cursor/
+.claude/
+
+
+
+# 日志文件
+backend/logs/
+*.log
+
+# 上传文件
+backend/uploads/
+
+# Docker 数据
+data/
