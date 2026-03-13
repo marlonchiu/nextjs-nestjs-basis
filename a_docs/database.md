@@ -19,6 +19,11 @@ CREATE DATABASE "image-saas";
 # 生成数据库操作代码
 npx drizzle-kit push
 
+# 生成迁移文件
+npx drizzle-kit generate
+# 执行迁移（把 SQL 真正跑到数据库）
+npx drizzle-kit migrate
+
 # 运行数据库操作代码
 npx drizzle-kit studio
 
@@ -29,4 +34,6 @@ npx drizzle-kit studio
 
 ```bash
 pnpm add zod
+
+pnpm add drizzle-zod
 ```

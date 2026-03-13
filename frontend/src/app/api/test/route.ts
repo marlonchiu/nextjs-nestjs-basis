@@ -1,13 +1,7 @@
 // import { NextRequest, NextResponse } from 'next/server'
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-
-import * as z from 'zod'
-
-const inputSchema = z.object({
-  name: z.string().max(20).min(3),
-  email: z.email()
-})
+import { insertUserSchema, updateUserSchema } from '@/server/db/validate-schema'
 
 // export const dynamic = 'force-dynamic'
 
@@ -30,7 +24,7 @@ export function GET(request: NextRequest) {
   //   return NextResponse.json({ error }, { status: 400 })
   // }
 
-  const result = inputSchema.safeParse({ name, email })
+  const result = updateUserSchema.safeParse({ name, email })
   console.log('🚀 ~ GET ~ result:', result)
   if (result.success) {
     return NextResponse.json(result.data)
