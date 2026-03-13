@@ -2,7 +2,7 @@
 
 ## 参考文档
 
-> [drizzle](https://orm.drizzle.team/)
+> [drizzle](https://orm.drizzle.team/) > [Zod](https://zod.dev/)
 
 ## 操作指南
 
@@ -23,4 +23,10 @@ npx drizzle-kit push
 npx drizzle-kit studio
 
 # 打开访问数据库 https://local.drizzle.studio/
+```
+
+## Zod 数据验证
+
+```bash
+pnpm add zod
 ```
